@@ -1,0 +1,31 @@
+/*  For styles that are used in both mobile and desktop viewports.
+    For styles that are different in viewports, use Tailwind! */
+
+.c-container {
+    display: flex;
+    gap: 2rem;
+    min-height: 500px;
+}
+
+.c-image {
+    border-radius: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.text-container {
+    padding: 16px;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 600;
+    line-height: 54px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .title {
+        line-height: 30px;
+    }
+}

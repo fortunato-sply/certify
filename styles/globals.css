@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+.particles-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    pointer-events: none;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    opacity: 0.6;
+    /* More discrete opacity */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.perspective {
+    transform:
+        perspective(100em)
+        rotateX(-10deg)
+        rotateY(-20deg);
+}
+
+.last-section-gradient {
+    height: 50vh;
+    background: rgb(12,79,45);
+    background: linear-gradient(180deg, rgba(12,79,45,1) 0%, rgba(30,126,77,1) 52%, rgba(20,155,88,1) 100%);
+  }
+
+.shadow-green {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.underline {
+    width: 100%;
+}

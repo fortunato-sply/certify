@@ -1,0 +1,88 @@
+import { motion, useInView } from 'framer-motion';
+import './style.css'; 
+import { useRef, useState, useEffect } from 'react';
+
+type imageDescriptionProps = {
+    imagePosition: "right" | "left";
+    imageSrc: string;
+    title: string;
+    description: string;
+}
+
+export default function ImageDescription({ imagePosition, imageSrc, title, description }: imageDescriptionProps) {
+    const desktopRef = useRef(null);
+    const mobileRef = useRef(null);
+
+    // Estado para controlar se a animação já foi exibida
+    const [desktopHasAnimated, setDesktopHasAnimated] = useState(false);
+    const [mobileHasAnimated, setMobileHasAnimated] = useState(false);
+
+    const desktopIsInView = useInView(desktopRef);
+    const mobileIsInView = useInView(mobileRef);
+
+    // Marcar que a animação foi executada assim que entrar em visualização
+    useEffect(() => {
+        if (desktopIsInView && !desktopHasAnimated) {
+            setDesktopHasAnimated(true);
+        }
+    }, [desktopIsInView, desktopHasAnimated]);
+
+    useEffect(() => {
+        if (mobileIsInView && !mobileHasAnimated) {
+            setMobileHasAnimated(true);
+        }
+    }, [mobileIsInView, mobileHasAnimated]);
+
+    const renderImage = () => {
+        return (
+            <motion.div
+                ref={desktopRef}
+                className='image-container sm:w-1/2 w-full hidden sm:flex'
+                style = {{
+                    opacity: desktopHasAnimated ? 1 : 0,
+                    transform: desktopHasAnimated ? "none" : "translateY(100px)",
+                    transition: "all 0.6s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+                    justifyContent: imagePosition === 'left' ? 'start' : 'end'
+                }}
+            >
+                <img 
+                    src={imageSrc}
+                    className='c-image'
+                />
+            </motion.div>
+        )
+    }
+
+    return (
+        <div className='c-container sm:w-full w-screen px-2 sm:flex-row flex-col sm:justify-between items-center'>
+            {/* Show image only in bottom if mobile */}
+            <motion.div
+                className='image-container sm:w-1/2 w-11/12 sm:hidden flex items-center justify-center'
+                ref={mobileRef}
+                style = {{
+                    opacity: mobileHasAnimated ? 1 : 0,
+                    transform: mobileHasAnimated ? "none" : "translateY(100px)",
+                    transition: "all 0.6s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+                    justifyContent: imagePosition === 'left' ? 'start' : 'end'
+                }}
+            >
+                <img 
+                    src={imageSrc}
+                    className='c-image'
+                />
+            </motion.div>
+            {imagePosition === 'left' ? renderImage() : null}
+            <div className="text-container sm:text-left text-center sm:w-1/2 w-full">
+                <p 
+                    className='title sm:text-5xl text-2xl'
+                >
+                    {title}
+                </p>
+                <div className='sm:w-3/4 w-full sm:text-left text-center'>
+                    <p className='description font-light sm:text-xl text-base'>{description}</p>
+                </div>
+            </div>
+            {imagePosition === 'right' ? renderImage() : null}
+        </div>
+    )
+}
