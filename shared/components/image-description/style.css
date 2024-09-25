@@ -28,4 +28,8 @@
     .title {
         line-height: 30px;
     }
+
+    .c-container {
+        min-height: 450px;
+    }
 }

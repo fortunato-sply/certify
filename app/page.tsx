@@ -58,22 +58,28 @@ export default function Home() {
           Acesse a plataforma
         </Link>
       </motion.div>
-      <Image3D src='/ALL-DEVICES.png' />
-      <section className="w-full relative p-0 mt-2 flex flex-col items-center align-center">
-        <motion.div className="mt-32 w-full flex flex-col items-center gap-8 py-8 bg-neutral-950 rounded-xl shadow-green">
-          <img src='/favicon.svg' className="w-full max-h-20 bg-center" />
 
-          <p className="w-full md:w-3/4 lg:w-3/4 text-center flex flex-col gap-4 lg:gap-2">
-            <span className="font-bold  text-2xl md:text-4xl lg:text-4xl leading-7">Sistema automatizado, prático e seguro</span>
-            <span className="text-base md:text-lg lg:text-xl">Documentos autênticos e personalizados para otimizar tempo em seu negócio.</span>
-          </p>
-        </motion.div>
-        {/* <img src='/NEWBG.svg' className="w-screen absolute bottom-0 left-0 " /> */}
+      <Image3D src='/ALL-DEVICES.png' />
+      
+      {/* CARD */}
+      <section className="w-full relative p-0 mt-2 flex flex-col items-center align-center">
+        <Card className=" mt-24 py-4 w-full">
+          <CardBody className="overflow-visible py-2 w-full">
+            <motion.div className="w-full flex flex-col items-center gap-8 py-8 rounded-xl ">
+              <img src='/favicon.svg' className="w-full max-h-20 bg-center" />
+              <p className="w-full md:w-3/4 lg:w-3/4 text-center flex flex-col gap-4 lg:gap-2">
+                <span className="font-bold  text-2xl md:text-4xl lg:text-4xl leading-7">Sistema automatizado, prático e seguro</span>
+                <span className="text-base md:text-lg lg:text-xl text-zinc-500">Documentos autênticos e personalizados para otimizar tempo em seu negócio.</span>
+              </p>
+            </motion.div>
+          </CardBody>
+        </Card>
       </section>
 
-      <div className="underline"></div>
+      <div className="underline sm:hidden flex mt-12"></div>
 
-      <section className="mt-16 w-full flex items-center flex-col sm:gap-6 gap-8">
+      {/* MULTIPLE IMAGE AND TEXT */}
+      <section className="mt-12 w-full flex items-center flex-col sm:gap-2 gap-4">
         <ImageDescription
           imagePosition="right"
           imageSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/A_hand_pointing_to_a_futuristic_technology.png/640px-A_hand_pointing_to_a_futuristic_technology.png"
@@ -98,17 +104,16 @@ export default function Home() {
           title="Acompanhe seu crescimento"
           description="O dashboard centraliza as informações mais relevantes para seu negócio."
         />
-        <Card className="py-4 w-full">
-          <CardBody className="overflow-visible py-2 w-full">
-            <motion.div className="w-full flex flex-col items-center gap-8 py-8 rounded-xl ">
-              <img src='/favicon.svg' className="w-full max-h-20 bg-center" />
-              <p className="w-full md:w-3/4 lg:w-3/4 text-center flex flex-col gap-4 lg:gap-2">
-                <span className="font-bold  text-2xl md:text-4xl lg:text-4xl leading-7">Sistema automatizado, prático e seguro</span>
-                <span className="text-base md:text-lg lg:text-xl">Documentos autênticos e personalizados para otimizar tempo em seu negócio.</span>
-              </p>
-            </motion.div>
-          </CardBody>
-        </Card>
+      </section>
+
+      {/* HOW IT WORKS */}
+      <section className="w-full h-screen flex items-center justify-center flex-col relative gap-4">
+        <div className="bg-bg-gray w-screen h-screen absolute top-0 -z-20"></div>
+        <div className="flex flex-col items-center gap-0">
+          <p className="font-bold sm:text-3xl text-2xl">Como funciona</p>
+          <p className="sm:text-xl text-md text-zinc-500">Assista ao vídeo de introdução</p>
+        </div>
+        <div className="w-full bg-black sm:h-5/6 h-3/4 rounded-lg"></div>
       </section>
     </section>
   );

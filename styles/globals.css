@@ -42,5 +42,7 @@ body {
 }
 
 .underline {
-    width: 100%;
+    width: 100vw;
+    height: 1px;
+    background-color: #252529;
 }
