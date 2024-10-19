@@ -44,7 +44,7 @@ const MobilePlanSlider = ({ plans, selectedPlanType } : MobilePlanSliderProps) =
                                     <span>MAIS POPULAR</span>
                                 </div>
                             }
-                            <div className="flex flex-col flex-1 mt-6">
+                            <div className="flex flex-col flex-1 mt-4">
                                 <div className="flex flex-col">
                                     <h3 className="text-4xl font-semibold m-0">{plan.name}</h3>
                                     <p className="text-gray-subtitle">{plan.description}</p>
