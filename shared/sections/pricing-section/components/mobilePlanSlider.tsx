@@ -63,7 +63,7 @@ const MobilePlanSlider = ({ plans, selectedPlanType } : MobilePlanSliderProps) =
                             </div>
                             
                             <div>
-                                <p className="text-5xl font-bold">
+                                <p className="text-5xl font-bold pt-16">
                                     {
                                         selectedPlanType == 'monthly' &&
                                         <span>R${plan.monthlyPrice}</span>
