@@ -29,7 +29,7 @@ export const plans: Plan[] = [
         annualPrice: 39,
         features: [
             "Gere até 80 certificados por mês",
-            "Dashboard de acompanhamento de cursos",
+            "Dashboard de alunos e cursos",
             "Personalização de templates",
             "Cursos ilimitados",
             "Suporte prioritário"
@@ -43,8 +43,8 @@ export const plans: Plan[] = [
         annualPrice: 71,
         features: [
             "Gere certificados ilimitados",
-            "Acesso à biblioteca de templates customizados",
-            "Dashboard de acompanhamento de cursos",
+            "Biblioteca de templates customizados",
+            "Dashboard de alunos e cursos",
             "Personalização de templates",
             "Cursos ilimitados",
             "Suporte prioritário"
