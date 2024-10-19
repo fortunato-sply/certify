@@ -104,7 +104,7 @@ export default function Home() {
                   transition={{ duration: 0.3, delay: .3, ease: "easeInOut" }}
                 >
                   <span className="font-bold  text-2xl md:text-4xl lg:text-4xl leading-7">Sistema automatizado, prático e seguro</span>
-                  <span className="text-base md:text-lg lg:text-xl text-zinc-500">Documentos autênticos e personalizados para otimizar tempo em seu negócio.</span>
+                  <span className="text-base md:text-lg lg:text-xl text-gray-subtitle">Documentos autênticos e personalizados para otimizar tempo em seu negócio.</span>
                 </motion.p>
               </motion.div>
             </CardBody>
@@ -145,7 +145,6 @@ export default function Home() {
       <VideoSection />
       
       {/* <EvidenceSection /> */}
-
       <PricingSection />
     </section>
   );

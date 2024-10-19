@@ -9,6 +9,11 @@
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.6.0",
+		"@fortawesome/free-brands-svg-icons": "^6.6.0",
+		"@fortawesome/free-regular-svg-icons": "^6.6.0",
+		"@fortawesome/free-solid-svg-icons": "^6.6.0",
+		"@fortawesome/react-fontawesome": "^0.2.2",
 		"@heroicons/react": "^2.1.5",
 		"@nextui-org/button": "2.0.37",
 		"@nextui-org/code": "2.0.32",
@@ -30,12 +35,15 @@
 		"intl-messageformat": "^10.5.0",
 		"next": "14.2.4",
 		"next-themes": "^0.2.1",
+		"phosphor-icons": "^1.4.2",
+		"phosphor-react": "^1.4.1",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
 		"react-player": "^2.16.0",
 		"react-slick": "^0.30.2",
 		"react-swipeable": "^7.0.1",
-		"slick-carousel": "^1.8.1"
+		"slick-carousel": "^1.8.1",
+		"swiper": "^11.1.14"
 	},
 	"devDependencies": {
 		"@types/node": "20.5.7",

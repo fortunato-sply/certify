@@ -14,7 +14,7 @@
 
 .text-container {
     padding: 16px;
-    gap: 1rem;
+    gap: .5rem;
     display: flex;
     flex-direction: column;
 }

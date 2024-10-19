@@ -87,7 +87,7 @@ export default function ImageDescription({ imagePosition, imageSrc, title, descr
                     {title}
                 </p>
                 <div className='sm:w-3/4 w-full sm:text-left text-center'>
-                    <p className='description font-light sm:text-xl text-base text-zinc-500'>{description}</p>
+                    <p className='description font-light sm:text-xl text-base text-gray-subtitle'>{description}</p>
                 </div>
             </motion.div>
             {imagePosition === 'right' ? renderImage() : null}

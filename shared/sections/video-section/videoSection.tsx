@@ -31,22 +31,22 @@ const VideoSection = () => {
     // }, []);
 
     return (
-        <motion.section className="w-full h-90 flex bg-bg-gray items-center justify-center flex-col relative gap-4">
+        <motion.section className="w-full h-90 flex bg-bg-gray items-center flex-col relative gap-4">
             <div className="bg-bg-gray w-screen h-full absolute top-0 -z-20"></div>
 
             <motion.div 
-                className="flex flex-col items-center gap-0"
+                className="flex flex-col items-center gap-0 pt-6"
                 initial={{ opacity: 0, translateY: '50px' }}
                 whileInView={{ opacity: 1, translateY: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: .1, ease: "easeInOut" }}
             >
-                <h2 className="font-bold sm:text-3xl text-2xl">Como funciona?</h2>
-                <p className="sm:text-xl text-md text-zinc-500">Assista ao vídeo de introdução</p>
+                <h2 className="font-semibold sm:text-3xl text-2xl">Como funciona?</h2>
+                <p className="sm:text-xl text-md text-gray-subtitle">Assista ao vídeo de introdução</p>
             </motion.div>
 
             <motion.div 
-                className="w-full bg-black sm:h-5/6 h-3/4 rounded-lg"
+                className="w-full bg-black h-5/6 rounded-lg"
                 initial={{ opacity: 0, translateY: '50px' }}
                 whileInView={{ opacity: 1, translateY: 0 }}
                 viewport={{ once: true }}

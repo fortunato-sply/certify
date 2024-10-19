@@ -46,3 +46,7 @@ body {
     height: 1px;
     background-color: #252529;
 }
+
+html {
+    scroll-behavior: smooth;
+}

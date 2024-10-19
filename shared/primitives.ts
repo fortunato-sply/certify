@@ -20,6 +20,9 @@ export const title = tv({
     fullWidth: {
       true: "w-full block",
     },
+    fontWeight: {
+      semibold: "font-semibold"
+    }
   },
   defaultVariants: {
     size: "md",

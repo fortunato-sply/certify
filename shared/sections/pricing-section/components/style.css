@@ -1,0 +1,54 @@
+.swiper-pagination-bullet {
+    background-color: #149B58!important; /* Verde claro */
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #149B58!important; /* Verde escuro */
+  }
+
+  /* Centraliza e adiciona margem abaixo da paginação */
+.swiper-pagination {
+    position: relative !important; /* Garante que fique no fluxo normal */
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.favorite-tip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: .7rem;
+    padding: .25rem;
+    background-color: #149B58;
+    color: #18181B;
+    font-weight: bold;
+}
+
+.favorite-border {
+    border: 2px solid #149B58;
+}
+
+.tooltip-20off {
+    padding: 1px 8px 1px 8px;
+}
+
+/* Animação do slider (plano selecionado) */
+.plan-slider {
+    position: absolute;
+    top: 8%;
+    left: 1%;
+    width: 49%; /* Cada botão ocupa metade */
+    height: 84%;
+    background-color: black;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.plan-selector {
+    position: relative;
+    overflow: hidden;
+}
