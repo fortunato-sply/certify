@@ -8,7 +8,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 import './style.css';
-import { ArrowLineRight } from "phosphor-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 

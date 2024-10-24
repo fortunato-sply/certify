@@ -38,10 +38,9 @@
 /* Animação do slider (plano selecionado) */
 .plan-slider {
     position: absolute;
-    top: 8%;
-    left: 1%;
-    width: 49%; /* Cada botão ocupa metade */
-    height: 84%;
+    top: 4px;
+    width: calc(50% - 0.25rem); /* Ocupa metade menos o padding */
+    height: calc(100% - 0.5rem); /* Altura menos o padding */
     background-color: black;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;

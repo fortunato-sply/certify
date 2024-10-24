@@ -50,3 +50,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+#pricing {
+    scroll-margin-top: 50px; /* Ajuste este valor conforme a altura do seu header */
+}

@@ -8,7 +8,7 @@ interface PlanTypeSelectorProps {
 
 const PlanTypeSelector = ({ selectedPlanType, setSelectedPlanType }: PlanTypeSelectorProps) => {
     return (
-        <div className="flex w-full bg-bg-gray h-12 rounded-lg p-1 plan-selector">
+        <div className="flex sm:w-1/2 w-full bg-bg-gray h-12 rounded-lg p-1 plan-selector">
             <div
                 className="plan-slider"
                 style={{
@@ -17,14 +17,14 @@ const PlanTypeSelector = ({ selectedPlanType, setSelectedPlanType }: PlanTypeSel
             ></div>
 
             <button
-                className={`w-1/2 text-sm flex items-center justify-center font-semibold py-2 px-4 rounded-lg z-10`}
+                className={`relative w-1/2 text-sm flex items-center justify-center font-semibold py-2 px-4 rounded-lg z-10`}
                 onClick={() => setSelectedPlanType('monthly')}
             >
                 Mensal
             </button>
 
             <button
-                className={`w-1/2 text-sm flex items-center justify-center gap-1 font-semibold py-2 px-4 rounded-lg z-10`}
+                className={`relative w-1/2 text-sm flex items-center justify-center gap-1 font-semibold py-2 px-4 rounded-lg z-10`}
                 onClick={() => setSelectedPlanType('annual')}
             >
                 <span>Anual</span>
