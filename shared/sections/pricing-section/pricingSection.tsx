@@ -5,12 +5,13 @@ import MobilePlanSlider from "./components/mobilePlanSlider";
 import { useState } from "react";
 import PlanTypeSelector from "./components/planTypeSelector";
 import DesktopPlanView from "./components/desktopPlanView";
+import './style.css'
 
 const PricingSection = () => {
     const [selectedPlanType, setSelectedPlanType] = useState<PlanType>("annual"); 
     
     return (
-        <section id='pricing' className="w-full h-screen flex items-center flex-col relative gap-4">
+        <section id='pricing' className="w-full h-screen-header flex items-center flex-col relative gap-4">
             <motion.div 
                 className="flex flex-col items-center gap-2 text-center"
                 initial={{ opacity: 0, translateY: '50px' }}

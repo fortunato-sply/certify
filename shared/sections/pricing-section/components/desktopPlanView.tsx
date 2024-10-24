@@ -20,7 +20,7 @@ const DesktopPlanView = ({ plans, selectedPlanType } : DesktopPlanViewProps) => 
     return (
         <div className="sm:flex hidden w-full h-3/4 gap-4">
                 {plans.map((plan) => (
-                    <div key={plan.name} className={"p-6 bg-bg-gray rounded-lg shadow-md w-1/3 max-h-full flex flex-col space-between relative " + (plan.favorite ? 'favorite-border' : '')}>
+                    <div key={plan.name} className={"p-6 bg-bg-gray rounded-lg shadow-md min-w-40 w-1/3 max-h-full flex flex-col space-between relative " + (plan.favorite ? 'favorite-border' : '')}>
                         {
                             plan.favorite && 
                             <div className="favorite-tip">
