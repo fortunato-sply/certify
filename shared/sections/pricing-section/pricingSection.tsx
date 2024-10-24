@@ -19,7 +19,7 @@ const PricingSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: .3, ease: "easeInOut" }}
             >
-                <h1 className="sm:pt-12 pt-4 font-semibold sm:text-5xl text-3xl">Encontre o <span className={title({ color: "green", fontWeight: "semibold" })}>plano ideal</span> para seu negócio</h1>
+                <h1 className="pt-8 font-semibold sm:text-5xl text-3xl">Encontre o <span className={title({ color: "green", fontWeight: "semibold" })}>plano ideal</span> para seu negócio</h1>
                 <p className="text-gray-subtitle text-xl sm:block hidden">Automação e gestão de certificados eficiente.</p>
             </motion.div>
             <motion.div
